@@ -1,0 +1,28 @@
+{
+  "genre": [
+    {
+      "name": "horror",
+      "id": "1"
+    },
+    {
+      "name": "drama",
+      "id": "2"
+    },
+    {
+      "name": "crime",
+      "id": "3"
+    },
+    {
+      "name": "tragedy",
+      "id": "3"
+    },
+    {
+      "name": "comedy",
+      "id": "4"
+    },
+    {
+      "name": "dark comedy",
+      "id": "5"
+    }
+  ]
+}

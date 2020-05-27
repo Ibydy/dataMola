@@ -1,0 +1,237 @@
+[
+  {
+    "key": "genres",
+    "value": [
+      {
+        "name": "horror",
+        "backgroundColor": "#505050",
+        "id": "1"
+      },
+      {
+        "name": "drama",
+        "backgroundColor":"#bb6bd9",
+        "id": "2"
+      },
+      {
+        "name": "crime",
+        "backgroundColor":"#9b51e0",
+        "id": "3"
+      },
+      {
+        "name": "tragedy",
+        "backgroundColor":"#eb5757",
+        "id": "4"
+      },
+      {
+        "name": "comedy",
+        "backgroundColor":"#828282",
+        "id": "5"
+      },
+      {
+        "name": "dark comedy",
+        "backgroundColor":"#505050",
+        "id": "6"
+      }
+    ]
+  },
+  {
+    "key": "networks",
+    "value": [
+      {
+        "name": "AMC",
+        "id": "1"
+      },
+      {
+        "name": "Netflix",
+        "id": "2"
+      },
+      {
+        "name": "NBC",
+        "id": "3"
+      }
+    ]
+  },
+  {
+    "key": "shows",
+    "value": [
+      {
+        "name": "Preacher",
+        "season": "1",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "2",
+          "6"
+        ],
+        "premiere": "22.05.2016",
+        "id": "10"
+      },
+      {
+        "name": "Preacher",
+        "season": "2",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "2",
+          "6"
+        ],
+        "premiere": "25.06.2017",
+        "id": "11"
+      },
+      {
+        "name": "Preacher",
+        "season": "3",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "2",
+          "6"
+        ],
+        "premiere": "24.05.2018",
+        "id": "12"
+      },
+      {
+        "name": "Preacher",
+        "season": "4",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "2",
+          "6"
+        ],
+        "premiere": "04.08.2019",
+        "id": "13"
+      },
+
+
+      {
+        "name": "The Terror",
+        "season": "1",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "1",
+          "2"
+        ],
+        "premiere": "26.03.2018",
+        "id": "1"
+      },
+      {
+        "name": "The Terror",
+        "season": "2",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "1",
+          "2"
+        ],
+        "premiere": "12.09.2019",
+        "id": "2"
+      },
+      {
+        "name": "The Terror",
+        "season": "3",
+        "networkIds": [
+          "1"
+        ],
+        "genreIds": [
+          "1",
+          "2"
+        ],
+        "premiere": "20.10.2019",
+        "id": "3"
+      },
+
+      {
+        "name": "Better Call Saul",
+        "season": "1",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "15.02.2016",
+        "id": "4"
+      },
+      {
+        "name": "Better Call Saul",
+        "season": "2",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "18.04.2016",
+        "id": "5"
+      },
+      {
+        "name": "Better Call Saul",
+        "season": "3",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "19.06.2017",
+        "id": "6"
+      },
+      {
+        "name": "Better Call Saul",
+        "season": "4",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "18.10.2018",
+        "id": "7"
+      },
+      {
+        "name": "Better Call Saul",
+        "season": "5",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "20.04.2020",
+        "id": "8"
+      },
+      {
+        "name": "Better Call Saul",
+        "season": "6",
+        "networkIds": [
+          "1",
+          "2"
+        ],
+        "genreIds": [
+          "3",
+          "4"
+        ],
+        "premiere": "20.04.2020",
+        "id": "9"
+      }
+    ]
+  }
+]

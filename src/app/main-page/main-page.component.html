@@ -1,0 +1,8 @@
+<div class="container">
+  <app-filters (filterChange)="onFilterChange($event)"></app-filters>
+  <app-table [shows]="shows"
+             [totalShowLength]="totalShowLength"
+             (paginationChange)="onPaginationChange($event)"
+  ></app-table>
+</div>
+

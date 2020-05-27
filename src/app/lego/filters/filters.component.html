@@ -1,0 +1,16 @@
+<div class="container">
+  <input class="container_name"
+         placeholder="Name"
+         (change)="onNameChange()"
+         [(ngModel)]="nameFilter">
+  <app-dropdown class="container_gender"
+                [items]="genres"
+                [preview]="'Genre'"
+                (selectItem)="selectGenre($event)"
+  ></app-dropdown>
+  <app-dropdown [items]="years"
+                [viewField]="null"
+                [preview]="'Premiere Year'"
+                (selectItem)="selectYear($event)"
+  ></app-dropdown>
+</div>

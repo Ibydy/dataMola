@@ -1,0 +1,58 @@
+<table class="table">
+
+  <tr class="table-header">
+    <th class="table-td table-td_left"
+        (click)="onTableHeaderClick('Name')">
+      Name
+      <span class="icon" *ngIf="sortDirection!== 0 && sortField === 'Name'"
+            [ngClass]="{'icon_up': sortDirection === 2}"></span>
+    </th>
+    <th class="table-td table-td_center"
+        (click)="onTableHeaderClick('Season')">
+      Season
+      <span class="icon" *ngIf="sortDirection!== 0 && sortField === 'Season'"
+            [ngClass]="{'icon_up': sortDirection === 2}"></span>
+    </th>
+    <th class="table-td table-td_center"
+        (click)="onTableHeaderClick('Network')">
+      Network
+      <span class="icon" *ngIf="sortDirection!== 0 && sortField === 'Network'"
+            [ngClass]="{'icon_up': sortDirection === 2}"></span>
+    </th>
+    <th class="table-td table-td_right"
+        (click)="onTableHeaderClick('Premiere')">
+       <span class="icon" *ngIf="sortDirection!== 0 && sortField === 'Premiere'"
+             [ngClass]="{'icon_up': sortDirection === 2}"></span>
+      Premiere
+    </th>
+  </tr>
+  <tr *ngFor="let show of shows" class="table-row">
+    <td class="table-td table-td_left">
+      <div>
+        {{show.name}}
+      </div>
+      <span *ngFor="let genre of show.genres"
+            class="genre"
+            [style.background]="genre.backgroundColor"
+      >{{genre.name}}</span>
+    </td>
+    <td class="table-td table-td_center">{{show.season}}</td>
+    <td class="table-td table-td_center">{{show.networkView}}</td>
+    <td class="table-td table-td_right">{{show.premeireDateView}}</td>
+  </tr>
+</table>
+<div class="table-additional">
+  <div>
+    <button *ngFor="let page of pages"
+            class="page"
+            [ngClass]="{'page_selected': page === currentPage}"
+            (click)="selectPage(page)">{{page}}</button>
+  </div>
+
+  <div>
+    <button *ngFor="let itemByPage of itemsByPage"
+            class="itemsByPage"
+            [ngClass]="{'itemsByPage_selected': itemByPage === selectedItemsByPage}"
+            (click)="selectItemByPage(itemByPage)">{{itemByPage}}</button>
+  </div>
+</div>

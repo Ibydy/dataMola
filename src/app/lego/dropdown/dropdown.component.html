@@ -1,0 +1,16 @@
+<div class="text" (click)="dropdownVisible = !dropdownVisible"
+     [style.margin-right]="marginRight"
+     [style.width]="width"
+     [style.color]="color"
+     [style.border]="border"
+     [style.border-radius]="borderRadius"
+>
+  <span *ngIf="selectedItem">{{selectedItem}}</span>
+  <span *ngIf="!selectedItem">{{preview}}</span>
+  <span class="icon" [ngClass]="{'icon_up': !dropdownVisible}" [style.color]="color"></span>
+</div>
+<div class="list" *ngIf="dropdownVisible" [style.width]="width">
+  <div *ngFor="let item of items" class="list-item" (click)="select(item)">
+    {{getItemView(item)}}
+  </div>
+</div>
